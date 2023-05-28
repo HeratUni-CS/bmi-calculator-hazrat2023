@@ -198,8 +198,7 @@ class _InputPageState extends State<InputPage> {
             
             BottomButton(onPressed: (){
               BMIbrain bmiBrain = BMIbrain(height: height, weight: weight);
-    Navigator.push(
-    context,
+    Navigator.push(context,
     MaterialPageRoute(
       builder: (context){
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class BottomButton extends StatelessWidget {
+
   void Function() onPressed;
   String label;
   BottomButton({required this.onPressed, required this.label});
@@ -17,8 +18,7 @@ class BottomButton extends StatelessWidget {
         width: double.infinity,
         height: KBottomContainerHeight,
         child: Center(
-          child: Text(label,
-              style: KLargeButtonStyle),
+          child: Text(label, style: KLargeButtonStyle),
         ),
       ),
     );

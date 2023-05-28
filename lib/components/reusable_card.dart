@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ReusableCard extends StatelessWidget {
   ReusableCard({required this.colour, this.child, this.onPressed});
+
   final Color colour;
   final Widget? child;
   final void Function()? onPressed;
@@ -11,13 +12,12 @@ class ReusableCard extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Container(
+
         // child: cardChild,
         child: child,
         margin: EdgeInsets.all(10.0),
         width: double.infinity,
-        decoration: BoxDecoration(
-          color: colour,
-          borderRadius: BorderRadius.circular(10.0),
+        decoration: BoxDecoration(color: colour,borderRadius: BorderRadius.circular(10.0),
 
         ),
       ),
